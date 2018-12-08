@@ -1,7 +1,21 @@
 jQuery.noConflict();
 jQuery(document).ready(function($){
 								
-							
+
+	$('.navbar-nav a').on('click', function(ev) {
+
+		ev.preventDefault();
+
+		$('.navbar-toggle').click();
+
+
+		$('html, body').animate({
+			scrollTop: $('.' + $(this).data('section')).offset().top -90
+		}, 1500);
+
+
+	})
+
 function lightboxPhoto() {
 	
 	jQuery("a[rel^='prettyPhoto']").prettyPhoto({
