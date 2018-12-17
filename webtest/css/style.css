@@ -11,6 +11,7 @@ body {
     font-size: 100%;
     background: #fff;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 body a {
@@ -381,7 +382,7 @@ a.two.scroll {
 }
 
 .banner_bottom {
-    padding: 7em 0;
+    padding: 4em 0;
 }
 
 .news-left {
@@ -495,7 +496,7 @@ p.sub_p {
 /*-- /works--*/
 
 .inner_sec_info_wthree_agile {
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .banner_inner_con {
@@ -588,7 +589,7 @@ h3.tittle-w3ls.cen {
 }
 
 .works {
-    padding: 7em 0;
+    padding: 4em 0;
     background: #1d1c1c;
 }
 
@@ -1874,7 +1875,7 @@ p.copy-right a:hover {
         text-align: center;
     }
     .carousel-indicators {
-        bottom: 10%;
+        bottom: 0;
         left: 50%;
     }
     .banner_bottom_in {
@@ -2077,6 +2078,7 @@ p.copy-right a:hover {
 
  .footer-contact {
      overflow: hidden;
+     padding: 15px;
  }
  .footer-contact .address-grid{
     float: left;
@@ -2097,18 +2099,26 @@ p.copy-right a:hover {
     color: #fff;
     width: 100px;
     display: block;
+    margin: 0 0 10px 0;
 }
 
+.contact-section form input[type="submit"] {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
 .contact-section form input[type="text"] {
-    padding: 5px;
-    width: 300px;
+    padding: 10px;
+    width: 100%;
 }
 
 .contact-section .form-row-big {
-    margin: 0 20px;
+    width: 100%;
 }
 .contact-section textarea {
-    width: 640px;
+    max-width: 640px;
+    min-width: 300px;
+    width: 100%;
     height: 200px;
     resize: none;
 }
@@ -2116,9 +2126,26 @@ p.copy-right a:hover {
     overflow: hidden;
 }
 
+
 .contact-section .form-row div {
     float: left;
-    margin: 0 20px;
+    
+    width: 100%;
+}
+
+@media(min-width:769px){
+    .contact-section .form-row div {
+        width: 300px;
+        margin: 10px 20px;
+    }
+
+    .contact-section .form-row-big {
+        margin: 20px;
+    }
+
+    .contact-section form input[type="submit"] {
+        margin: 0 20px;
+    }
 }
 
 .contact-section form div {

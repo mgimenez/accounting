@@ -2,7 +2,7 @@ jQuery.noConflict();
 jQuery(document).ready(function($){
 								
 
-	$('.navbar-nav a').on('click', function(ev) {
+	$('.js-scroll-to').on('click', function(ev) {
 
 		ev.preventDefault();
 
@@ -12,8 +12,6 @@ jQuery(document).ready(function($){
 		$('html, body').animate({
 			scrollTop: $('.' + $(this).data('section')).offset().top -90
 		}, 1500);
-
-
 	})
 
 function lightboxPhoto() {
