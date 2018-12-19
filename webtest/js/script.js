@@ -8,6 +8,9 @@ jQuery(document).ready(function($){
 
 		$('.navbar-toggle').click();
 
+		$('.navbar-nav li').removeClass('active');
+		$(this).parent('li').addClass('active');
+
 
 		$('html, body').animate({
 			scrollTop: $('.' + $(this).data('section')).offset().top -90
